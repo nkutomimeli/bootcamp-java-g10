@@ -14,9 +14,12 @@ public class Main {
 	// exercicio1.executar();
 
 	// Exercicio 2
-    Exercicio2 exercicio = new Exercicio2();
-    exercicio.executar();
+    // Exercicio2 exercicio = new Exercicio2();
+    // exercicio.executar();
 
+    // Exercicio 3
+    Exercicio3 exercicio = new Exercicio3();
+    exercicio.executar();
 
 
 

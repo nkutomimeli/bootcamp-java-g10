@@ -26,9 +26,7 @@ public class Exercicio2 {
         }
 
         //opcao 2
-        for () {
 
-        }
 
         // 4, 8, 12, 16
 
