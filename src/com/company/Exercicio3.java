@@ -4,32 +4,28 @@ import java.util.Scanner;
 
 public class Exercicio3 {
 
-    public void executar ()
+    public void executar () {
+        Scanner entrada = new Scanner(System.in);
+        int n, c = 2, i = 0;
 
-    {
+        System.out.print("Informe um número para saber se ele é primo: ");
+        n = entrada.nextInt();
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite um número: ");
-        int n = scanner.nextInt(); // 6
-
-        //for (int i=0; i<=n; i++) {
-
-        //}
-        int contador = 0;
-        while (contador < n) {
-
+        while (c <= n) {
+            if (n % c == 0 && c < n) {
+                c++;
+                i++;
+            }
+            if (c == n && i == 0) {
+                System.out.println("É Primo");
+                break;
+            }
+            if (n % c != 0 && c < n) {
+                c++;
+            } else {
+                System.out.println("Não é primo");
+                break;
+            }
         }
-
-        /*
-        if (n % 1 == 0 && n % n == 0) {
-        System.out.println("É primo");
-    } else{
-        System.out.println("Não é primo");
     }
-        */
-    }
-
-
-
 }
