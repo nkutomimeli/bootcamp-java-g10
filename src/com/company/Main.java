@@ -8,7 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+    Menu menu = new Menu();
+    menu.iniciar();
 	// exercicio 1
 	// Exercicio1 exercicio1 = new Exercicio1();
 	// exercicio1.executar();
@@ -18,8 +19,8 @@ public class Main {
     // exercicio.executar();
 
     // Exercicio 3
-    Exercicio3 exercicio = new Exercicio3();
-    exercicio.executar();
+    //Exercicio3 exercicio = new Exercicio3();
+    //exercicio.executar();
 
 
 
