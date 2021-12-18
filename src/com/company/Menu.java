@@ -39,6 +39,11 @@ public class Menu {
                     ex3.executar();
                     break;
                 }
+                case 4: {
+                    Exercicio4 ex4 = new Exercicio4();
+                    ex4.executar();
+                    break;
+                }
                 case 0:{
                     this.printarSaida();
                     break;
@@ -60,6 +65,7 @@ public class Menu {
         System.out.println("1 - Executa exercício 1");
         System.out.println("2 - Executa exercício 2");
         System.out.println("3 - Executa exercício 3");
+        System.out.println("4 - Executa exercício 4");
         System.out.println("0 - Para sair\n");
     }
 }
