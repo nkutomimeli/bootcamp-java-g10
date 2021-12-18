@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    // função que inicializa o programa
+    // função que inicializa o menu
     public void iniciar(){
 
         Scanner entrada = new Scanner(System.in);
@@ -44,6 +44,11 @@ public class Menu {
                     ex4.executar();
                     break;
                 }
+                case 5: {
+                    Exercicio5 ex5 = new Exercicio5();
+                    ex5.executar();
+                    break;
+                }
                 case 0:{
                     this.printarSaida();
                     break;
@@ -66,6 +71,7 @@ public class Menu {
         System.out.println("2 - Executa exercício 2");
         System.out.println("3 - Executa exercício 3");
         System.out.println("4 - Executa exercício 4");
+        System.out.println("5 - Executa exercício 5");
         System.out.println("0 - Para sair\n");
     }
 }
