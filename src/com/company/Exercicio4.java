@@ -1,51 +1,47 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
 
 public class Exercicio4 {
-
-    public void executar () {
+    public void executar(){
+        System.out.println("Digite um valor para que retorne os numero primos de 1 ate ele:");
         Scanner entrada = new Scanner(System.in);
-        int n, k = 0, c = 2;
 
-        System.out.print("Informe um número: ");
-        n = entrada.nextInt();
+        int contador = 0;
+        int limite = entrada.nextInt();
 
-        for (int j = 1; j <= n; j++) { //4
-            if(n % j == 0){
-                k++;
-            }
-            if(j == c && k == 2){
-                System.out.println(j);
+        List<Integer> listaDePrimos = new ArrayList<>();
+
+        while(contador <= limite){
+            contador++;
+            if (ehPrimo(contador)){
+                listaDePrimos.add(contador);
             }
         }
 
+        System.out.println(listaDePrimos);
 
     }
 
-    public boolean primo(int n){
-        int c = 2, i = 0;
-        boolean estado = false;
-        while (c <= n) {
-            if (n % c == 0 && c < n) {
+    private boolean ehPrimo(int numero){
+        int  c = 2, i = 0;
+        while (c <= numero) {
+            if (numero % c == 0 && c < numero) {
                 c++;
                 i++;
             }
-            if (c == n && i == 0) {
-                System.out.println("É Primo");
-                estado = true;
-                break;
+            if (c == numero && i == 0) {
+                return true;
             }
-            if (n % c != 0 && c < n) {
+            if (numero % c != 0 && c < numero) {
                 c++;
             } else {
-                System.out.println("Não é primo");
-                estado = false;
-                break;
+                return false;
             }
         }
-        return estado;
+        return false;
     }
+
 }
-
-

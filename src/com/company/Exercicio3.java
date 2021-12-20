@@ -8,7 +8,7 @@ public class Exercicio3 {
         Scanner entrada = new Scanner(System.in);
         int n, c = 2, i = 0;
 
-        System.out.print("Informe um número: ");
+        System.out.print("Informe um número para saber se ele é primo: ");
         n = entrada.nextInt();
 
         while (c <= n) {

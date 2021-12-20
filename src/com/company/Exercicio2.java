@@ -8,10 +8,10 @@ public class Exercicio2 {
         // Exercicio 2
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite um número: ");
+        System.out.print("Digite a quantidade de números que deseja ver: ");
         int n = scanner.nextInt(); // 4
 
-        System.out.print("Digite outro número: ");
+        System.out.print("Digite o múltiplo desejado: ");
         int m = scanner.nextInt(); // 4
 
         int contador = 0;
