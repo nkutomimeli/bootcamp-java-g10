@@ -1,7 +1,5 @@
-package com.company;
+package pi1.java;
 
-
-import java.util.Scanner;
 
 public class Main {
 
