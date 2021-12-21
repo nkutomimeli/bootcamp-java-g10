@@ -1,4 +1,4 @@
-package pi3.java;
+package Aula01.PI01Exerc01TT;
 
 public class Main {
     public static void main(String[] args) {

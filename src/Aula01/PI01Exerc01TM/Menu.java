@@ -1,4 +1,4 @@
-package pi1.java;
+package Aula01.PI01Exerc01TM;
 
 import java.util.Scanner;
 
