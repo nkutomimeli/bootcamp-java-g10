@@ -1,4 +1,4 @@
-package pi5.java;
+package Aula02.PI01Exerc01TT;
 
 public class PasswordForte extends Senha {
 
