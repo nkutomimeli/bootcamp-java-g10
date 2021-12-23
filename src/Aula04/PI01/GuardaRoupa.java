@@ -1,7 +1,6 @@
 package Aula04.PI01;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class GuardaRoupa {
     private Map<Integer, List<Vestuario>> guardaroupa = new HashMap<Integer, List<Vestuario>>();
@@ -18,7 +17,7 @@ public class GuardaRoupa {
             int count = 0;
             System.out.println("Guarda-roupa " + r.getKey());
             while(count < r.getValue().size()) {
-                System.out.println("Peça de marca " + r.getValue().get(count).getMarca() + " e modelo " + r.getValue().get(count).getMarca());
+                System.out.println("Peça de marca " + r.getValue().get(count).getMarca() + " e modelo " + r.getValue().get(count).getModelo());
                 count++;
             }
         });
@@ -32,6 +31,7 @@ public class GuardaRoupa {
             if(elemento.getKey() == id) {
                 for (Vestuario e: elemento.getValue()) {
                     System.out.println("Devolução das peça: " + e.getMarca() + " de modelo " + e.getModelo());
+                    lista.add(e);
                 }
                 iterator.remove();
                 return lista;
